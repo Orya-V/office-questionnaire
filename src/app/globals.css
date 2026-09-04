@@ -1,0 +1,61 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --corporate-blue: #003DA5;
+  --corporate-light-blue: #00A3E0;
+  --corporate-orange: #FFA300;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: white;
+  color: #333;
+}
+
+.card {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 61, 165, 0.1);
+  border: 1px solid rgba(0, 61, 165, 0.1);
+}
+
+.btn-primary {
+  background-color: var(--corporate-blue);
+  color: white;
+  border-radius: 8px;
+  padding: 10px 20px;
+  font-weight: 500;
+  transition: all 0.2s ease;
+}
+
+.btn-primary:hover {
+  background-color: #002d7a;
+}
+
+.btn-secondary {
+  background-color: var(--corporate-light-blue);
+  color: white;
+  border-radius: 8px;
+  padding: 10px 20px;
+  font-weight: 500;
+  transition: all 0.2s ease;
+}
+
+.btn-secondary:hover {
+  background-color: #008cc2;
+}
+
+.input-field {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 10px 14px;
+  width: 100%;
+  transition: border-color 0.2s ease;
+}
+
+.input-field:focus {
+  outline: none;
+  border-color: var(--corporate-light-blue);
+}
